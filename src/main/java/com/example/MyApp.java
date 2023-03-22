@@ -10,16 +10,16 @@ public class MyApp extends Application {
 
 	@Override
 	public void start(Stage stage) {
-        var button = new Button("Hello");
-        button.setOnAction(e->{
-        	System.out.println("Hello, world");    
-        });
+		var button = new Button("Hello");
+		button.setOnAction(e -> {
+			System.out.println("Hello, world");
+		});
 
-        var bPane = new BorderPane(button);
+		var bPane = new BorderPane(button);
 
-        var scene = new Scene(bPane, 320, 240);
-        stage.setScene(scene);
-        stage.show();
+		var scene = new Scene(bPane, 320, 240);
+		stage.setScene(scene);
+		stage.show();
 	}
 
 	public static void main(String[] args) {
